@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -48,15 +47,15 @@
         <fieldset>
           <legend>Review</legend>
           <div class="form-item">
-            <textarea rows="3" style="resize: none;" placeholder="Dê aqui seu review e te direi se ele é de loja, produto ou loja & produto."></textarea>
+            <textarea rows="3" id="comment-text" style="resize: none;" placeholder="Dê aqui seu review e te direi se ele é de loja, produto ou loja & produto."></textarea>
           </div>
 
-          <button class="w100">Testar</button>
+          <button class="w100" onclick="checkReview()">Testar</button>
           
-          <div class="box" style="margin-top: 3%">
+          <div class="hide box" style="margin-top: 3%">
             <p class="text-center">
               Esse é um review de:
-              <h2 class="text-center">Loja!</h2>
+              <h2 class="text-center" id="result"></h2>
             </p>
           </div>
         </fieldset>
@@ -79,5 +78,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/kube/6.5.2/js/kube.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
