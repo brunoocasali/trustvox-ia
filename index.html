@@ -38,25 +38,24 @@
   <body>
     <div class="row">
       <div class="col col-12">
-        <h2 class="text-center" style="margin-top: 3%">Review de produto ou loja?</h2>
+        <h2 class="text-center" style="margin-top: 3%">Análise automática em tempo real de reviews</h2>
       </div>
     </div>
 
     <div class="row align-center" style="margin-top: 1%">
-      <div class="col col-6">
+      <div class="col col-7">
         <fieldset>
           <legend>Review</legend>
           <div class="form-item">
-            <textarea rows="3" id="comment-text" style="resize: none;" placeholder="Dê aqui seu review e te direi se ele é de loja, produto ou loja & produto."></textarea>
+            <label><span class="error" id="error"></span></label>
+            <textarea rows="3" id="comment-text" style="resize: none;" placeholder="Dê aqui seu review e veja se é um review de produto ou se há algo nele sobre a loja."></textarea>
           </div>
 
           <button class="w100" onclick="checkReview()">Testar</button>
           
-          <div class="hide box" style="margin-top: 3%">
-            <p class="text-center">
-              Esse é um review de:
-              <h2 class="text-center" id="result"></h2>
-            </p>
+          <div class="hide box" style="margin-top: 5%" id="result-box">
+            <h3 class="text-center" id="result" style="margin: 0"></h3>
+            <!--<img class="hide" src="loader.gif" alt="" id="loader">-->
           </div>
         </fieldset>
       </div>
