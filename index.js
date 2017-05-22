@@ -33,7 +33,7 @@ function getText(data){
 
 // Make the actual CORS request.
 function checkReview() {
-  $('#result').text('');
+  $('#result').text('...');
   $('#error').text('');
   $('#comment-text').removeClass('error');
 
