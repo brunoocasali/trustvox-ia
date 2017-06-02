@@ -1,9 +1,9 @@
 function getText(data){
-    if (data.is_product && !data.is_store) 
-        return "Ótimo! Esse é um review somente de produto!";
-    else 
+    if (!data.is_product && data.is_store) 
         return "Oops! Agora você deve escrever apenas sobre o produto. " +
                "Você vai poder falar sobre a loja depois.";
+    else
+        return "Ótimo! Esse é um review somente de produto!"; 
 }
 
 function checkReview() {
