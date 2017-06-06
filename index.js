@@ -1,5 +1,5 @@
 function getText(data){
-    if (!data.is_product && data.is_store) 
+    if (!data.is_product && data.is_store || data.is_product && data.is_store) 
         return "Oops! Agora você deve escrever apenas sobre o produto. " +
                "Você vai poder falar sobre a loja depois.";
     else
