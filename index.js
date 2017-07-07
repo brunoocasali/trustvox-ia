@@ -16,7 +16,7 @@ function checkReview() {
         data: JSON.stringify({ 
             "comment": $('#comment-text').val() 
         }),
-        url: 'https://rambo-trustvox.herokuapp.com/sentiment/comments/',
+        url: 'http://169.57.165.211:9901/sentiment/comments/',
         contentType: "application/json; charset=utf-8",
         dataType: "JSON",
         processData: true,
