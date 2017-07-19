@@ -11,6 +11,7 @@ function checkReview() {
     $('#error').text('');
     $('#comment-text').removeClass('error');
 
+
     $.ajax({
         type: "POST",
         data: JSON.stringify({ 
