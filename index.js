@@ -1,7 +1,6 @@
 function getText(data){
-    if (!data.is_product && data.is_store || data.is_product && data.is_store) 
-        return "Oops! Agora você deve escrever apenas sobre o produto. " +
-               "Você vai poder falar sobre a loja depois.";
+    if (data.is_store)
+        return "Esse review contém comentários sobre loja, atendimento ou entrega.";
     else
         return "Ótimo! Esse é um review somente de produto!"; 
 }
@@ -26,6 +25,10 @@ function checkReview() {
 
             $('#result').text(getText(data));
             $('#result-box').removeClass('hide');
+            if(data.is_store)
+                $('#result').addColors('#ebd1d1')
+            else
+                $('#result').addColors('#d6f0cf')
         },
         error: function (data) {
             $('#comment-text').addClass('error');
