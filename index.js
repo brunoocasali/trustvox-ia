@@ -27,9 +27,9 @@ function checkReview() {
             $('#result').text(result);
             $('#result-box').removeClass('hide');
             if(result == "Esse review contém comentários sobre loja, atendimento ou entrega.")
-                $('#result-box').css('color', '#ebd1d1');
+                $('#result-box').css('background', '#ebd1d1');
             else
-                $('#result-box').css('color', '#d6f0cf');
+                $('#result-box').css('background', '#d6f0cf');
         },
         error: function (data) {
             $('#comment-text').addClass('error');
