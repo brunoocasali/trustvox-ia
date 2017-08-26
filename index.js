@@ -9,6 +9,7 @@ function checkReview() {
     $('#result').text('...');
     $('#error').text('');
     $('#comment-text').removeClass('error');
+    $('#result-box').removeClass('hide');
 
 
     $.ajax({
