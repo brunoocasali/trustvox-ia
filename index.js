@@ -9,6 +9,7 @@ function checkReview() {
     $('#result').text('...');
     $('#error').text('');
     $('#comment-text').removeClass('error');
+    $('#result-box').css('background', '#f8f8f8')
     $('#result-box').removeClass('hide');
 
 
