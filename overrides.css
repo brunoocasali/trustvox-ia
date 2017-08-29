@@ -1,11 +1,11 @@
-.box { 
+.box {
     padding: 24px;
-    background: #f8f8f8; 
+    background: #f8f8f8;
 }
 
 footer {
     border-top: 1px solid #eee;
-    padding: 0 25px; 
+    padding: 0 25px;
     margin-top: 100px;
     font-size: 13px;
     color: rgba(0, 0, 0, 0.5);
@@ -23,4 +23,8 @@ body {
 
 .texto {
         font-size: 12px;
+}
+
+.fieldset-main {
+    background-color: #f2f2f4;
 }

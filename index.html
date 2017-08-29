@@ -18,7 +18,7 @@
     <link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16" />
     <link rel="icon" type="image/png" href="favicon/favicon-128.png" sizes="128x128" />
-    
+
     <meta name="application-name" content="Trustvox Certificado"/>
     <meta name="msapplication-TileColor" content="#FFFFFF" />
     <meta name="msapplication-TileImage" content="favicon/mstile-144x144.png" />
@@ -38,21 +38,24 @@
   <body>
     <div class="row">
       <div class="col col-12">
-        <h2 class="text-center" style="margin-top: 3%">Verifique se o review é somente sobre o produto</h2>
+        <h2 class="text-center" style="margin-top: 3%">Análise automática do review: Produto ou Loja?</h2>
       </div>
     </div>
 
     <div class="row align-center" style="margin-top: 1%">
       <div class="col col-7">
-        <fieldset>
-          <legend>Review de Produto</legend>
+        <fieldset class="fieldset-main">
+          <legend>FAÇA O TESTE: ESCREVA UM REVIEW DE PRODUTO PRA TESTAR</legend>
+          <div class="col col-12">
+            <div class="texto">Muitas vezes o consumidor gostou do produto, mas acaba dando uma nota baixa por causa da entrega, atendimento ou serviço. Por isso, detectar em tempo real os reviews que misturam opinião de loja e produto, ajuda a aumentar a nota do produto.</div>
+          </div>
           <div class="form-item">
             <label><span class="error" id="error"></span></label>
-            <textarea rows="3" id="comment-text" style="resize: none;" placeholder="Escreva aqui seu review e veja se ele é somente de produto ou se há algo sobre a loja!"></textarea>
+            <textarea rows="3" id="comment-text" style="resize: none;" placeholder="Exemplo: o produto é ótimo, mas não recomendo porque demorou demais pra entregar."></textarea>
           </div>
 
           <button class="w100" onclick="checkReview()">Testar</button>
-          
+
           <div class="hide box" style="margin-top: 5%" id="result-box">
             <h3 class="text-center" id="result" style="margin: 0"></h3>
           </div>
